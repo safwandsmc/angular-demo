@@ -31,7 +31,7 @@ pipeline {
     stage('Publish') {
       steps {
         echo 'Publish files'
-        sh 'sshpass -p "Admin@#321" scp ./dist Administrator@192.168.192.12:C:\\test'
+        sh 'scp ./dist Administrator@192.168.192.12:C:\\test'
       }
     }
 
