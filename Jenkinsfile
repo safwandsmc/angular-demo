@@ -10,7 +10,6 @@ pipeline {
       steps {
         echo 'Install Packages'
         sh 'npm i'
-        sh 'npm audit fix'
         sh 'ls'
       }
     }
